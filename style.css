@@ -98,11 +98,12 @@ h2 {
   justify-content: space-between;
   align-items: baseline;
   gap: 1rem;
-  flex-wrap: wrap;
 }
 
 .entry-title {
   font-weight: bold;
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .entry-title a {
@@ -114,6 +115,7 @@ h2 {
   color: var(--text);
   font-size: 0.92rem;
   white-space: nowrap;
+  flex: 0 0 auto;
 }
 
 .entry-sub {
@@ -140,12 +142,16 @@ li {
 .skill-row {
   display: flex;
   gap: 0.5rem;
-  flex-wrap: wrap;
 }
 
 .skill-label {
   font-weight: bold;
-  min-width: 220px;
+  flex: 0 0 220px;
+}
+
+.skill-value {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 #theme-toggle {
@@ -175,11 +181,18 @@ li {
 }
 
 @media (max-width: 600px) {
+  .skill-row {
+    flex-direction: column;
+    gap: 0.05rem;
+  }
   .skill-label {
-    min-width: 0;
+    flex-basis: auto;
   }
   .entry-row {
     flex-direction: column;
     gap: 0.1rem;
+  }
+  .entry-title {
+    flex-basis: auto;
   }
 }
