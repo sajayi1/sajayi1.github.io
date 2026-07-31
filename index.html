@@ -21,62 +21,18 @@
   </header>
 
   <section>
-    <h2>Education</h2>
-    <div class="entry">
-      <div class="entry-row">
-        <span class="entry-title">University at Albany, State University of New York, Albany, NY</span>
-        <span class="entry-date">Graduated Dec 2024</span>
-      </div>
-      <p class="entry-sub">Bachelor of Science: Emergency Preparedness, Homeland Security, and Cybersecurity. Minor in Informatics</p>
-    </div>
-    <div class="entry">
-      <div class="entry-row">
-        <span class="entry-title">University at Albany, State University of New York, Albany, NY</span>
-        <span class="entry-date">Expected 2027</span>
-      </div>
-      <p class="entry-sub">Master's in Artificial Intelligence for Business: Information Security Concentration</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Honors and Awards</h2>
-    <div class="entry">
-      <div class="entry-row">
-        <span class="entry-sub">Dean's List of Distinguished Students</span>
-        <span class="entry-date">May 2022–2024</span>
-      </div>
-    </div>
-    <div class="entry">
-      <div class="entry-row">
-        <span class="entry-sub">Spellman Award</span>
-        <span class="entry-date">Aug 2023–May 2024</span>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Certifications</h2>
-    <p>
-      CompTIA Security+ (Active) &middot;
-      Certified Network Security Practitioner (CNSP) &middot;
-      Microsoft Certified: Security Operations Analyst Associate (SC-200)
-    </p>
-  </section>
-
-  <section>
-    <h2>Technical Skills</h2>
+    <h2>Certifications &amp; Technical Skills</h2>
     <div class="skills">
-      <div class="skill-row"><span class="skill-label">Languages &amp; Querying</span><span class="skill-value">Python, PowerShell, KQL, SQL, JavaScript, HTML, CSS</span></div>
-      <div class="skill-row"><span class="skill-label">Security Operations</span><span class="skill-value">Alert Triage, Incident Response, Threat Hunting, Phishing Analysis, Email Security, Log Analysis, Root Cause Analysis</span></div>
-      <div class="skill-row"><span class="skill-label">Microsoft Security</span><span class="skill-value">Microsoft Defender XDR, Defender for Office 365, Defender for Endpoint, Microsoft Purview, Purview DLP, Sensitivity Labels, Entra ID, Microsoft Sentinel, Exchange Online</span></div>
-      <div class="skill-row"><span class="skill-label">Endpoint &amp; Vulnerability Tools</span><span class="skill-value">CrowdStrike Falcon, Qualys, Nessus, MECM</span></div>
-      <div class="skill-row"><span class="skill-label">Identity, Compliance &amp; Frameworks</span><span class="skill-value">Active Directory, IAM, MFA, NIST CSF, FERPA, HIPAA, Zero Trust Architecture</span></div>
-      <div class="skill-row"><span class="skill-label">Workflow &amp; Documentation</span><span class="skill-value">Jira, Confluence, SharePoint, Technical Documentation, End-User Security Guidance</span></div>
+      <div class="skill-row"><span class="skill-label">Certifications</span><span class="skill-value">CompTIA Security+ (Active), Microsoft Certified: Security Operations Analyst Associate (SC-200), Certified Network Security Practitioner (CNSP)</span></div>
+      <div class="skill-row"><span class="skill-label">Security Operations</span><span class="skill-value">Alert Triage &amp; Escalation, Incident Response (NIST SP 800-61), Threat Hunting, Detection Engineering, Phishing &amp; BEC Analysis, IOC Enrichment, MITRE ATT&amp;CK Mapping</span></div>
+      <div class="skill-row"><span class="skill-label">SIEM, XDR &amp; EDR</span><span class="skill-value">Splunk (SIEM), Microsoft Defender XDR, Defender for Endpoint (EDR), Defender for Office 365, Advanced Hunting, CrowdStrike Falcon (EDR), Check Point Firewall Logs, MS-ISAC Threat Intel</span></div>
+      <div class="skill-row"><span class="skill-label">Identity &amp; Data Protection</span><span class="skill-value">Entra ID (Azure AD), Active Directory, IAM, MFA, Purview DLP, Sensitivity Labels, Exchange Online, Zero Trust, Qualys, Nessus</span></div>
+      <div class="skill-row"><span class="skill-label">Languages &amp; Frameworks</span><span class="skill-value">KQL, Python, PowerShell, SQL; MITRE ATT&amp;CK, NIST CSF, FERPA, HIPAA; Jira, FootPrints, Playbook &amp; Runbook Development</span></div>
     </div>
   </section>
 
   <section>
-    <h2>Experience</h2>
+    <h2>Professional Experience</h2>
 
     <div class="entry">
       <div class="entry-row">
@@ -84,12 +40,14 @@
         <span class="entry-date">Jan 2025–Present</span>
       </div>
       <ul>
-        <li>Investigate roughly 20 phishing and suspicious email cases per month, ranging from low-severity to critical, using Microsoft Defender for Office 365, message trace, email headers, URL analysis, quarantine review, and recipient impact assessment.</li>
-        <li>Develop KQL queries in Microsoft Defender XDR using Advanced Hunting to analyze email events, URL clicks, sign-in activity, endpoint alerts, and user activity during security investigations.</li>
-        <li>Review Entra ID sign-in logs, audit logs, MFA registration changes, risky users, and authentication activity to investigate potential account compromise.</li>
-        <li>Monitor and review Microsoft Purview DLP events involving sensitive data exposure, external recipients, user overrides, policy tips, and sensitivity label activity.</li>
-        <li>Tune CrowdStrike Falcon prevention policies and review endpoint posture across Windows, macOS, and Linux systems to improve detection coverage and reduce operational impact.</li>
-        <li>Create technical documentation and user-facing guidance for security processes including quarantine, DLP, sensitivity labels, secure email handling, and investigation workflows.</li>
+        <li>Triage 300+ security alerts per month across Defender XDR, CrowdStrike Falcon (EDR), and Entra ID Protection — including ~20 phishing and BEC investigations — escalating confirmed incidents with documented scope, impact, and containment actions.</li>
+        <li>Author KQL detections and threat hunts in Defender XDR Advanced Hunting, mapped to MITRE ATT&amp;CK techniques (T1566 Phishing, T1078 Valid Accounts, T1564.008 Email Hiding Rules) to correlate email, identity, and endpoint telemetry.</li>
+        <li>Own end-to-end phishing and BEC response — header, URL, and attachment analysis, message trace, IOC extraction and enrichment, tenant-wide purge, and recipient impact assessment.</li>
+        <li>Investigate account compromise via Entra ID sign-in and audit logs, risky sign-in detections, MFA registration changes, and Exchange Online inbox rule review, pivoting into Splunk for Active Directory authentication logs and Check Point firewall logs to confirm scope; contain through session revocation, credential reset, and MFA re-registration.</li>
+        <li>Tune CrowdStrike Falcon prevention policies and Defender for Endpoint posture across Windows, macOS, and Linux, reducing false-positive detections by 50% while expanding detection coverage.</li>
+        <li>Hardened enterprise Active Directory password policy through Group Policy Objects across 3,000+ accounts, reducing exposure to credential stuffing and password spray (T1110).</li>
+        <li>Deployed and tuned Microsoft Purview DLP and sensitivity labels across Microsoft 365, validating external-recipient, policy-tip, and encryption behavior and cutting false-positive DLP alerts on PII and SSN handling.</li>
+        <li>Authored SOC runbooks for phishing triage, quarantine, DLP review, and account-compromise response, standardizing investigation steps and analyst handoff.</li>
       </ul>
     </div>
 
@@ -99,10 +57,10 @@
         <span class="entry-date">Jan 2024–Dec 2024</span>
       </div>
       <ul>
-        <li>Performed threat correlation and incident response by analyzing MS-ISAC intelligence against firewall logs and Intrusion Detection Systems (IDS), tuning rules to detect, accept, or drop network connections.</li>
-        <li>Collaborated with Local Educational Agencies (LEAs) statewide to conduct data security reviews, enforcing compliance with federal FERPA regulations and providing remediation guidance based on NIST CSF.</li>
+        <li>Correlated MS-ISAC threat intelligence against firewall and IDS logs to identify malicious traffic, tuning rules to detect, accept, or drop network connections.</li>
         <li>Administered the enterprise vulnerability management lifecycle using Nessus and Qualys, improving operational efficiency by 20% through false-positive reduction.</li>
-        <li>Developed user security awareness materials and training guides focused on phishing, suspicious links, password hygiene, and reporting procedures.</li>
+        <li>Conducted FERPA data security reviews with Local Educational Agencies statewide, delivering remediation guidance based on NIST CSF.</li>
+        <li>Built the department-wide cybersecurity awareness training delivered to 3,000+ staff, covering phishing identification, suspicious links, password hygiene, and incident reporting procedures.</li>
       </ul>
     </div>
 
@@ -112,60 +70,46 @@
         <span class="entry-date">Aug 2023–Dec 2024</span>
       </div>
       <ul>
-        <li>Resolved incoming technical support calls by initiating and assigning trouble tickets, troubleshooting printer issues, and assisting with Multi-Factor Authentication (MFA) setup.</li>
-        <li>Troubleshot issues reported by students, coordinating with vendors and technical teams to guide effective step-by-step problem resolution.</li>
+        <li>Resolved account lockouts and access requests for alumni and staff by phone, walking users through password reset and MFA re-enrollment using internal documentation; tracked tickets in FootPrints.</li>
+        <li>Provided on-site classroom support for faculty, troubleshooting presentation, printer, and endpoint issues.</li>
       </ul>
     </div>
   </section>
 
   <section>
-    <h2>Project Experience</h2>
+    <h2>Project</h2>
 
     <div class="entry">
       <div class="entry-row">
-        <span class="entry-title">New York State Education Department — AD Password Policy (GPO) Hardening, Albany, NY</span>
-        <span class="entry-date">Mar 2025–Dec 2025</span>
-      </div>
-      <ul>
-        <li>Hardened enterprise Active Directory password policy via Group Policy Object (GPO) controls affecting 3,000+ department accounts, reducing exposure to credential-stuffing attacks and strengthening authentication hygiene.</li>
-      </ul>
-    </div>
-
-    <div class="entry">
-      <div class="entry-row">
-        <span class="entry-title">Microsoft Purview DLP &amp; Sensitivity Labeling Implementation</span>
-        <span class="entry-date">Aug 2025–Present</span>
-      </div>
-      <ul>
-        <li>Implemented and tested Microsoft Purview DLP and Sensitivity Labels to classify, protect, and monitor sensitive organizational data across Microsoft 365 applications.</li>
-        <li>Tested policy behavior for external recipients, policy tips, user justifications, encryption, supervisor approval workflows, and access restrictions to ensure alignment with data protection requirements.</li>
-      </ul>
-    </div>
-
-    <div class="entry">
-      <div class="entry-row">
-        <span class="entry-title">Security Operations Query Repository — <a href="https://github.com/sajayi1/security-queries" target="_blank" rel="noopener">GitHub</a></span>
+        <span class="entry-title">Security Operations Query Repository — <a href="https://github.com/sajayi1/security-queries" target="_blank" rel="noopener">github.com/sajayi1/security-queries</a></span>
         <span class="entry-date">2026</span>
       </div>
       <ul>
-        <li>Built and maintained a public GitHub repository of sanitized KQL queries and PowerShell scripts for phishing investigation, Exchange Online inbox rule review, and Microsoft 365 security workflows.</li>
-        <li>Organized reusable queries by investigation use case and documented placeholders and usage notes to support safe reuse without exposing tenant or user data.</li>
-        <li>Reviewed DLP alerts and label-related scenarios, helping tune false positives and improve secure handling of PII, SSNs, and confidential information.</li>
+        <li>Authored a five-phase <a href="https://github.com/sajayi1/security-queries/blob/main/KQL/AccountCompromise/PLAYBOOK.md" target="_blank" rel="noopener">email account compromise hunting playbook</a> pairing Defender XDR KQL with Exchange Online PowerShell, with a scenario router mapping each alert type to the phases it needs.</li>
+        <li>Maintain a public repository of sanitized KQL queries and PowerShell scripts for phishing investigation, Exchange Online inbox rule review, and Microsoft 365 security workflows.</li>
       </ul>
     </div>
   </section>
 
   <section>
-    <h2>Leadership &amp; Volunteer Activities</h2>
+    <h2>Education &amp; Honors</h2>
     <div class="entry">
       <div class="entry-row">
-        <span class="entry-title">Christ Apostolic Church — Student Volunteer</span>
-        <span class="entry-date">Nov 2014–Present</span>
+        <span class="entry-title">M.S. Artificial Intelligence for Business, Information Security Concentration — University at Albany, SUNY</span>
+        <span class="entry-date">Expected 2027</span>
       </div>
-      <ul>
-        <li>Organize and facilitate the church's annual community Thanksgiving turkey distribution; serve as a drummer for church services.</li>
-      </ul>
     </div>
+    <div class="entry">
+      <div class="entry-row">
+        <span class="entry-title">B.S. Emergency Preparedness, Homeland Security &amp; Cybersecurity, Minor in Informatics — University at Albany, SUNY</span>
+        <span class="entry-date">Dec 2024</span>
+      </div>
+    </div>
+    <p class="entry-sub">
+      Dean's List of Distinguished Students (2022–2024) &nbsp;|&nbsp;
+      Spellman Award (2023–2024) &nbsp;|&nbsp;
+      Student Volunteer, Christ Apostolic Church (2014–Present)
+    </p>
   </section>
 </main>
 
