@@ -24,10 +24,13 @@
     <h2>Certifications &amp; Technical Skills</h2>
     <div class="skills">
       <div class="skill-row"><span class="skill-label">Certifications</span><span class="skill-value">CompTIA Security+ (Active), Microsoft Certified: Security Operations Analyst Associate (SC-200), Certified Network Security Practitioner (CNSP)</span></div>
-      <div class="skill-row"><span class="skill-label">Security Operations</span><span class="skill-value">Alert Triage &amp; Escalation, Incident Response (NIST SP 800-61), Threat Hunting, Detection Engineering, Phishing &amp; BEC Analysis, IOC Enrichment, MITRE ATT&amp;CK Mapping</span></div>
+      <div class="skill-row"><span class="skill-label">Security Operations</span><span class="skill-value">Alert Triage &amp; Escalation, Incident Response (NIST SP 800-61), Threat Hunting, Detection Engineering, Phishing &amp; BEC Analysis, IOC Enrichment, MITRE ATT&amp;CK Mapping, Log Analysis, Root Cause Analysis</span></div>
       <div class="skill-row"><span class="skill-label">SIEM, XDR &amp; EDR</span><span class="skill-value">Splunk (SIEM), Microsoft Defender XDR, Defender for Endpoint (EDR), Defender for Office 365, Advanced Hunting, CrowdStrike Falcon (EDR), Check Point Firewall Logs, MS-ISAC Threat Intel</span></div>
-      <div class="skill-row"><span class="skill-label">Identity &amp; Data Protection</span><span class="skill-value">Entra ID (Azure AD), Active Directory, IAM, MFA, Purview DLP, Sensitivity Labels, Exchange Online, Zero Trust, Qualys, Nessus</span></div>
-      <div class="skill-row"><span class="skill-label">Languages &amp; Frameworks</span><span class="skill-value">KQL, Python, PowerShell, SQL; MITRE ATT&amp;CK, NIST CSF, FERPA, HIPAA; Jira, FootPrints, Playbook &amp; Runbook Development</span></div>
+      <div class="skill-row"><span class="skill-label">Identity &amp; Data Protection</span><span class="skill-value">Entra ID (Azure AD), Active Directory, Group Policy, IAM, MFA, Microsoft Purview, Purview DLP, Sensitivity Labels, Exchange Online, Zero Trust Architecture</span></div>
+      <div class="skill-row"><span class="skill-label">Vulnerability &amp; Endpoint</span><span class="skill-value">Qualys, Nessus, MECM, Windows, macOS, and Linux endpoint posture</span></div>
+      <div class="skill-row"><span class="skill-label">Languages &amp; Querying</span><span class="skill-value">KQL, Python, PowerShell, SQL, JavaScript, HTML, CSS</span></div>
+      <div class="skill-row"><span class="skill-label">Frameworks &amp; Compliance</span><span class="skill-value">MITRE ATT&amp;CK, NIST CSF, NIST SP 800-61, FERPA, HIPAA</span></div>
+      <div class="skill-row"><span class="skill-label">Workflow &amp; Documentation</span><span class="skill-value">Jira, Confluence, SharePoint, FootPrints, Project Intake &amp; Change Approval, Playbook &amp; Runbook Development</span></div>
     </div>
   </section>
 
@@ -44,12 +47,14 @@
         <li>Build and deploy custom KQL detection rules in Defender XDR mapped to MITRE ATT&amp;CK (T1566 Phishing, T1078 Valid Accounts, T1564.008 Email Hiding Rules), validating precision against historical mail before promoting each rule to enforcing.</li>
         <li>Investigated a display-name impersonation campaign across 175 messages and 109 recipients, correlating rotating sender domains over shared email service providers, and shipped a detection rule that ran with zero false positives on validation.</li>
         <li>Own end-to-end phishing and BEC response, covering header, URL, and attachment analysis, message trace, IOC extraction and enrichment, tenant-wide purge, and recipient impact assessment.</li>
-        <li>Investigate account compromise across Entra ID sign-in logs, MFA changes, and inbox rules, pivoting into Splunk AD authentication and Check Point firewall logs; contain via session revocation, credential reset, and MFA re-registration.</li>
+        <li>Investigate account compromise via Entra ID sign-in and audit logs, risky sign-in detections, MFA registration changes, and Exchange Online inbox rule review, pivoting into Splunk for Active Directory authentication logs and Check Point firewall logs to confirm scope; contain through session revocation, credential reset, and MFA re-registration.</li>
         <li>Tune CrowdStrike Falcon prevention policies and Defender for Endpoint posture across Windows, macOS, and Linux, reducing false-positive detections by 50% while expanding detection coverage.</li>
         <li>Audited 141 anti-spam allowed-sender entries, eliminating stale device exemptions that bypassed spam and spoof filtering, and specified an IP-scoped mail flow rule to authenticate devices on origin rather than a spoofable From address.</li>
-        <li>Implemented Microsoft Purview sensitivity labels and DLP across Microsoft 365, adapting labels to department needs and routing each change through project intake for approval; tuned DLP to cut false positives on PII and SSN handling.</li>
-        <li>Route Qualys web application scan findings for 30+ agency websites to the confirmed owner of each.</li>
-        <li>Hardened Active Directory password policy through Group Policy across 3,000+ accounts, reducing exposure to credential stuffing and password spray (T1110).</li>
+        <li>Implemented and manage 7 Microsoft Purview sensitivity labels across Microsoft 365, adapting each to department needs and taking every label change through project intake for review and approval.</li>
+        <li>Deployed and tuned Purview DLP policies, validating external-recipient, policy-tip, user justification, and encryption behavior, and cutting false-positive alerts on PII and SSN handling.</li>
+        <li>Coordinate Qualys web application scan remediation across 30+ agency websites, confirming the responsible point of contact for each application, routing findings to the right owner, and tracking fixes through to completion.</li>
+        <li>Hardened enterprise Active Directory password policy through Group Policy across 3,000+ accounts, reducing exposure to credential stuffing and password spray (T1110).</li>
+        <li>Authored SOC runbooks and user-facing guidance for phishing triage, quarantine release, DLP, sensitivity labels, and account-compromise response, standardizing investigation steps and analyst handoff.</li>
       </ul>
     </div>
 
@@ -108,10 +113,21 @@
       </div>
     </div>
     <p class="entry-sub">
-      Dean's List of Distinguished Students (2022-2024) &nbsp;|&nbsp;
-      Spellman Award (2023-2024) &nbsp;|&nbsp;
-      Student Volunteer, Christ Apostolic Church (2014-Present)
+      Dean's List of Distinguished Students (May 2022-2024) &nbsp;|&nbsp;
+      Spellman Award (Aug 2023-May 2024)
     </p>
+  </section>
+  <section>
+    <h2>Leadership &amp; Volunteer</h2>
+    <div class="entry">
+      <div class="entry-row">
+        <span class="entry-title">Christ Apostolic Church, Student Volunteer</span>
+        <span class="entry-date">Nov 2014-Present</span>
+      </div>
+      <ul>
+        <li>Organize and facilitate the church's annual community Thanksgiving turkey distribution; serve as a drummer for church services.</li>
+      </ul>
+    </div>
   </section>
 </main>
 
