@@ -41,13 +41,13 @@
       </div>
       <ul>
         <li>Triage 300+ security alerts per month across Defender XDR, CrowdStrike Falcon (EDR), and Entra ID Protection — including ~20 phishing and BEC investigations — escalating confirmed incidents with documented scope, impact, and containment actions.</li>
-        <li>Author KQL detections and threat hunts in Defender XDR Advanced Hunting, mapped to MITRE ATT&amp;CK techniques (T1566 Phishing, T1078 Valid Accounts, T1564.008 Email Hiding Rules) to correlate email, identity, and endpoint telemetry.</li>
+        <li>Build and deploy custom KQL detection rules in Defender XDR mapped to MITRE ATT&amp;CK (T1566 Phishing, T1078 Valid Accounts, T1564.008 Email Hiding Rules), validating precision against historical mail before promoting each rule to enforcing.</li>
+        <li>Investigated a display-name impersonation campaign across 175 messages and 109 recipients, correlating rotating sender domains over shared email service providers, and shipped a detection rule that ran with zero false positives on validation.</li>
         <li>Own end-to-end phishing and BEC response — header, URL, and attachment analysis, message trace, IOC extraction and enrichment, tenant-wide purge, and recipient impact assessment.</li>
         <li>Investigate account compromise via Entra ID sign-in and audit logs, risky sign-in detections, MFA registration changes, and Exchange Online inbox rule review, pivoting into Splunk for Active Directory authentication logs and Check Point firewall logs to confirm scope; contain through session revocation, credential reset, and MFA re-registration.</li>
         <li>Tune CrowdStrike Falcon prevention policies and Defender for Endpoint posture across Windows, macOS, and Linux, reducing false-positive detections by 50% while expanding detection coverage.</li>
-        <li>Hardened enterprise Active Directory password policy through Group Policy Objects across 3,000+ accounts, reducing exposure to credential stuffing and password spray (T1110).</li>
-        <li>Deployed and tuned Microsoft Purview DLP and sensitivity labels across Microsoft 365, validating external-recipient, policy-tip, and encryption behavior and cutting false-positive DLP alerts on PII and SSN handling.</li>
-        <li>Authored SOC runbooks for phishing triage, quarantine, DLP review, and account-compromise response, standardizing investigation steps and analyst handoff.</li>
+        <li>Audited 141 anti-spam allowed-sender entries, eliminating stale device exemptions that bypassed spam and spoof filtering, and specified an IP-scoped mail flow rule to authenticate devices on origin rather than a spoofable From address.</li>
+        <li>Hardened Active Directory password policy via Group Policy across 3,000+ accounts (T1110 password spray), and deployed Purview DLP and sensitivity labels across Microsoft 365, tuning policies to cut false positives on PII and SSN handling.</li>
       </ul>
     </div>
 
