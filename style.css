@@ -54,9 +54,9 @@ body {
 
 .header h1 {
   margin: 0 0 0.3rem;
-  font-size: 1.7rem;
-  font-variant: small-caps;
-  letter-spacing: 0.03em;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
 }
 
 .contact {
@@ -119,7 +119,7 @@ h2 {
 }
 
 .entry-sub {
-  font-style: italic;
+  font-style: normal;
   margin: 0;
   color: var(--text);
 }
@@ -133,25 +133,18 @@ li {
   margin-bottom: 0.1rem;
 }
 
-.skills {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-}
-
+/* Matches the resume: "Label: value, value, ..." as one running line that wraps
+   back to the left margin, rather than a two-column table. */
 .skill-row {
-  display: flex;
-  gap: 0.5rem;
+  margin-bottom: 0.15rem;
 }
 
 .skill-label {
   font-weight: bold;
-  flex: 0 0 220px;
 }
 
-.skill-value {
-  flex: 1 1 auto;
-  min-width: 0;
+.skill-label::after {
+  content: ": ";
 }
 
 #theme-toggle {
@@ -181,13 +174,6 @@ li {
 }
 
 @media (max-width: 600px) {
-  .skill-row {
-    flex-direction: column;
-    gap: 0.05rem;
-  }
-  .skill-label {
-    flex-basis: auto;
-  }
   .entry-row {
     flex-direction: column;
     gap: 0.1rem;
