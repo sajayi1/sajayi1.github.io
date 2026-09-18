@@ -44,10 +44,12 @@
         <li>Build and deploy custom KQL detection rules in Defender XDR mapped to MITRE ATT&amp;CK (T1566 Phishing, T1078 Valid Accounts, T1564.008 Email Hiding Rules), validating precision against historical mail before promoting each rule to enforcing.</li>
         <li>Investigated a display-name impersonation campaign across 175 messages and 109 recipients, correlating rotating sender domains over shared email service providers, and shipped a detection rule that ran with zero false positives on validation.</li>
         <li>Own end-to-end phishing and BEC response, covering header, URL, and attachment analysis, message trace, IOC extraction and enrichment, tenant-wide purge, and recipient impact assessment.</li>
-        <li>Investigate account compromise via Entra ID sign-in and audit logs, risky sign-in detections, MFA registration changes, and Exchange Online inbox rule review, pivoting into Splunk for Active Directory authentication logs and Check Point firewall logs to confirm scope; contain through session revocation, credential reset, and MFA re-registration.</li>
+        <li>Investigate account compromise across Entra ID sign-in logs, MFA changes, and inbox rules, pivoting into Splunk AD authentication and Check Point firewall logs; contain via session revocation, credential reset, and MFA re-registration.</li>
         <li>Tune CrowdStrike Falcon prevention policies and Defender for Endpoint posture across Windows, macOS, and Linux, reducing false-positive detections by 50% while expanding detection coverage.</li>
         <li>Audited 141 anti-spam allowed-sender entries, eliminating stale device exemptions that bypassed spam and spoof filtering, and specified an IP-scoped mail flow rule to authenticate devices on origin rather than a spoofable From address.</li>
-        <li>Hardened Active Directory password policy via Group Policy across 3,000+ accounts (T1110 password spray), and deployed Purview DLP and sensitivity labels across Microsoft 365, tuning policies to cut false positives on PII and SSN handling.</li>
+        <li>Implemented Microsoft Purview sensitivity labels and DLP across Microsoft 365, adapting labels to department needs and routing each change through project intake for approval; tuned DLP to cut false positives on PII and SSN handling.</li>
+        <li>Route Qualys web application scan findings for 30+ agency websites to the confirmed owner of each.</li>
+        <li>Hardened Active Directory password policy through Group Policy across 3,000+ accounts, reducing exposure to credential stuffing and password spray (T1110).</li>
       </ul>
     </div>
 
